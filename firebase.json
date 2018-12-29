@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/pmsummitviewer",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

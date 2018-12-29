@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "date": "03/12/2019",
+    "startTime": "8:00am",
+    "endTime": "9:00am",
+    "title": "Enabling Agile Project Management with modernization",
+    "room": "Auditorium A1",
+    "imgUrl": "event_1.jpg",
+    "speakerName": "Daniel Hill",
+    "folderUrl": "hildegard.org",
+    "description": "The goal of an event description is to maximize the attendance of people who will enjoy your event. This is different than just getting people to your event. After all, events are a lot of work, and building an audience for your events means great word of mouth"
+  },
+  {
+    "id": 2,
+    "date": "03/12/2019",
+    "startTime": "9:00am",
+    "endTime": "10:00am",
+    "title": "Business 101",
+    "room": "Auditorium A1",
+    "imgUrl": "event_1.jpg",
+    "speakerName": "Daniel Hill",
+    "folderUrl": "hildegard.org"
+  },
+  {
+    "id": 3,
+    "date": "03/12/2019",
+    "startTime": "9:00am",
+    "endTime": "10:00am",
+    "title": "Business 101",
+    "room": "Auditorium A1",
+    "imgUrl": "event_1.jpg",
+    "speakerName": "Daniel Hill",
+    "folderUrl": "hildegard.org"
+  },
+  {
+    "id": 4,
+    "date": "03/12/2019",
+    "startTime": "10:00am",
+    "endTime": "11:00am",
+    "title": "Business 101",
+    "room": "Auditorium A1",
+    "imgUrl": "event_1.jpg",
+    "speakerName": "Daniel Hill",
+    "folderUrl": "hildegard.org"
+  },
+  {  
+    "id": 5,
+    "date": "03/13/2019",
+    "startTime": "8:00am",
+    "endTime": "9:00am",
+    "title": "Business 101",
+    "room": "Auditorium A1",
+    "imgUrl": "event_1.jpg",
+    "speakerName": "Daniel Hill",
+    "folderUrl": "hildegard.org"
+  },
+  {
+    "id": 6,
+    "date": "03/13/2019",
+    "startTime": "2:00pm",
+    "endTime": "3:00pm",
+    "title": "Business 101",
+    "room": "Auditorium A1",
+    "imgUrl": "event_1.jpg",
+    "speakerName": "Daniel Hill",
+    "folderUrl": "hildegard.org"
+  },
+  {
+    "id": 7,
+    "date": "03/13/2019",
+    "startTime": "10:00am",
+    "endTime": "11:00am",
+    "title": "Business 101",
+    "room": "Auditorium A1",
+    "imgUrl": "event_1.jpg",
+    "speakerName": "Daniel Hill",
+    "folderUrl": "hildegard.org"
+  },
+  {
+    "id": 8,
+    "date": "03/13/2019",
+    "startTime": "1:00pm",
+    "endTime": "2:00pm",
+    "title": "Business 101",
+    "room": "Auditorium A1",
+    "imgUrl": "event_1.jpg",
+    "speakerName": "Daniel Hill",
+    "folderUrl": "hildegard.org"
+  }
+]

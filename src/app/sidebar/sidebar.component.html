@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li>
+      <a routerLink="home" routerLinkActive="activated"> 
+          <i class="material-icons">supervised_user_circle</i>
+      </a>
+    </li>
+    <li *ngIf="currentUser">
+        <a routerLink="conferences" routerLinkActive="activated">
+          <i class="material-icons">storage</i>
+        </a>
+    </li>   
+  </ul>
+</nav>
+

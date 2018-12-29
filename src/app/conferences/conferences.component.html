@@ -1,0 +1,132 @@
+<!-- 
+<div id="bg2"></div>
+<h1>Conferences</h1>
+
+ <ul [@listStagger]="conferences">
+  <li *ngFor="let  conference of conferences | async">
+    <a routerLink="/details/{{conference.id}}">{{ conference.name }}</a>
+    <ul>
+      <li>{{conference.email}}</li>
+      <li><a href="http://{{ conference.website }}">{{conference.website }}</a></li>
+    </ul>
+  </li>
+</ul> 
+-->
+<div id="bg2"></div>
+  <!-- Home -->
+<div class="super_container">
+    <!-- Calendar -->
+    <div class="calendar" [@listStagger]="conferences">
+      <div class="container reset_container">
+        <div class="row">
+         <div class="col-xl-6 calendar_col">    
+           <div class="calendar_container" >    
+           <!-- loop through all session (should be sorted by date and startTime) -->
+             <ng-container *ngFor="let item of setOne | async as items; let i = index;">  
+                  <!-- if date of session has changed, show a date header -->
+                   <ng-container *ngIf="i===0  || item.date !== items[i-1].date">
+                      <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
+                          <div class="calendar_icon"><img src="assets/images/calendar.svg" alt=""></div>
+                          <div class="calendar_title">{{ getMonthDayShort(item.date) }} events calendar</div>                       
+                      </div>
+                   </ng-container>
+                
+                      <!-- Calendar Item -->
+                      <div class="calendar_items">   
+                          <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
+                            <!--  <div><div class="calendar_item_image"><img src="assets/images/event_1.jpg" alt=""></div></div> 
+                            -->
+                              <div class="calendar_item_time">
+                                <div>{{ item.startTime }}</div>
+                                <div>{{ item.room }}</div>
+                              </div>
+                              <div class="calendar_item_text">
+                                <div><a routerLink="/details/{{item.id}}">{{ item.title }}</a></div>
+                                <div>Speaker: {{ item.speakerName }} / {{ item.startTime }} - {{ item.endTime }}</div>
+                              </div>
+                          </div>   
+                      </div>
+               </ng-container>      
+           </div> 
+          </div>
+
+          <!-- second date here -->
+          <div class="col-xl-6 calendar_col">    
+              <div class="calendar_container" >    
+              <!-- loop through all session (should be sorted by date and startTime) -->
+                <ng-container *ngFor="let item of setTwo | async as items; let i = index;">  
+                     <!-- if date of session has changed, show a date header -->
+                      <ng-container *ngIf="i===0  || item.date !== items[i-1].date">
+                         <div class="calendar_title_bar d-flex flex-row align-items-center justify-content-start">
+                             <div class="calendar_icon"><img src="assets/images/calendar.svg" alt=""></div>
+                             <div class="calendar_title">{{ getMonthDayShort(item.date) }} events calendar</div>                       
+                            </div>
+                      </ng-container>
+       
+                      <!-- Calendar Item -->
+                      <div class="calendar_items">   
+                          <div class="calendar_item d-flex flex-row align-items-center justify-content-start">
+                            <!--  <div><div class="calendar_item_image"><img src="assets/images/event_1.jpg" alt=""></div></div> 
+                            -->
+                              <div class="calendar_item_time">
+                                <div>{{ item.startTime }}</div>
+                                <div>{{ item.room }}</div>
+                              </div>
+                              <div class="calendar_item_text">
+                                <div><a routerLink="/details/{{item.id}}">{{ item.title }}</a></div>
+                                <div>Speaker: {{ item.speakerName }} / {{ item.startTime }} - {{ item.endTime }}</div>
+                              </div>
+                          </div>   
+                      </div>
+               </ng-container>      
+              </div> 
+             </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,700,800,900');
+  
+  /*********************************
+  2. Body and some general stuff
+  *********************************/
+  
+  body
+  {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a5a5a5;
+  }
+  
+  /* 
+  div
+  {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+    */
+  
+  .super_container
+  {
+    width: 100%;
+    overflow: hidden;
+  }
+  .nopadding
+  {
+    padding: 0px !important;
+  }
+  .reset_container
+  {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  </style>

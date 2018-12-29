@@ -1,0 +1,29 @@
+<main>
+    <section id="card">
+        <ul>
+            <li>
+                <span></span>
+                <strong>Agile Projects and Teams</strong>
+            </li>
+            <li>
+                <span></span>
+                <strong>Modernization and Innovation Projects</strong>
+            </li>
+            <li>
+                <span></span>
+                <strong>OCIO's Technology Innovation Expose</strong>
+            </li>
+        </ul>
+    </section>
+    <section id="primary">
+        <h1>8Th Project Management Summit</h1>
+        <!-- <p>Get help with your daily life stuff.</p>  -->
+        <div *ngIf="currentUser; else register; let currentUser;">
+                <p><a [routerLink]="['/login']">Logout</a></p> 
+            </div> 
+            <ng-template #register>
+                <a [routerLink]="['/login']">Login</a> 
+                <a [routerLink]="['/register']">Register</a>
+            </ng-template>
+    </section>
+</main>
